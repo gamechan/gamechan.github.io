@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="utf-8" />
+        <title>GAMEANIME LAB - pelican</title>
+        <link rel="stylesheet" href="http://gamechan.github.io/theme/css/main.css" />
+        <link href="http://gamechan.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="GAMEANIME LAB Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://gamechan.github.io/">GAMEANIME LAB </a></h1>
+                <nav><ul>
+                    <li><a href="http://gamechan.github.io/blog/category/memo/">Memo</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://gamechan.github.io/blog/2018/04/first-post.html">github pagesをpelicanで始める</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-04-03T00:00:00+09:00">
+                Published: 2018-04-03(火)
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://gamechan.github.io/author/gamechan.html">gamechan</a>
+        </address>
+<p>In <a href="http://gamechan.github.io/blog/category/memo/">Memo</a>.</p>
+<p>tags: <a href="http://gamechan.github.io/blog/tag/github/">github</a> <a href="http://gamechan.github.io/blog/tag/pelican/">pelican</a> </p>
+</footer><!-- /.post-info --><h2>概要</h2>
+<p>Pelican導入から公開までのメモ</p>
+<h2>環境</h2>
+<p>• linux mint 18.3<br>
+• Python 3.6.3<br>
+• pip 9.0.3  </p>
+<h2>導入</h2>
+<h3>インストール</h3>
+<div class="highlight"><pre><span></span>$ sudo pip install pelican Markdown pytz ghp-import
+</pre></div>
+
+
+<h3>クイックスタート</h3>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/gamechan/gamechan.github.io  
+$ <span class="nb">cd</span> gamechan.github.io  
+$ pelican-quickstart  
+Welcome to pelican-quickstart v3.7.1.
+
+This script will <span class="nb">help</span> you create a new Pelican-based website.
+
+Please answer the following questions so this script can  generate the files  
+needed by Pelican.  
+
+
+&gt; Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span> .  
+&gt; What will be the title of this web site? GAMEANIME LAB  
+&gt; Who will be the author of this web site? gamechan  
+&gt; What will be the default language of this web site? <span class="o">[</span>ja<span class="o">]</span> ja  
+&gt; Do you want to specify a URL prefix? e.g.,  http://example.com   <span class="o">(</span>Y/n<span class="o">)</span> y  
+&gt; What is your URL prefix? <span class="o">(</span>see above example<span class="p">;</span> no trailing  slash<span class="o">)</span> http://gamechan.github.io  
+&gt; Do you want to <span class="nb">enable</span> article pagination? <span class="o">(</span>Y/n<span class="o">)</span> y  
+&gt; How many articles per page <span class="k">do</span> you want? <span class="o">[</span><span class="m">10</span><span class="o">]</span> <span class="m">10</span>  
+&gt; What is your <span class="nb">time</span> zone? <span class="o">[</span>Europe/Paris<span class="o">]</span> Asia/Tokyo  
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span> y  
+&gt; Do you want an auto-reload <span class="p">&amp;</span> simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span> y  
+&gt; Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span> n  
+&gt; Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span> n  
+&gt; Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span> n  
+&gt; Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span> n  
+&gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span> n  
+&gt; Do you want to upload your website using GitHub Pages? <span class="o">(</span>y/N<span class="o">)</span> y  
+&gt; Is this your personal page <span class="o">(</span>username.github.io<span class="o">)</span>? <span class="o">(</span>y/N<span class="o">)</span> y  
+Done. Your new project is available at /home/mint/gamechan.github.io
+</pre></div>
+
+
+<h2>記事の作成</h2>
+<ul>
+<li>markdownで記事を作成して/contentに保存</li>
+<li>テンプレ</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="err">記事タイトル</span>  
+<span class="n">date</span><span class="o">:</span> <span class="n">yyyy</span><span class="o">-</span><span class="n">mm</span><span class="o">-</span><span class="n">dd</span> <span class="n">HH</span><span class="o">:</span><span class="n">mm</span>  
+<span class="n">modified</span><span class="o">:</span> <span class="n">yyyy</span><span class="o">-</span><span class="n">mm</span><span class="o">-</span><span class="n">dd</span> <span class="n">HH</span><span class="o">:</span><span class="n">mm</span>  
+<span class="n">tags</span><span class="o">:</span> <span class="n">tag1</span><span class="o">,</span> <span class="n">tag2</span>  
+<span class="n">category</span><span class="o">:</span> <span class="n">category名</span>  
+<span class="n">slug</span><span class="o">:</span> <span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span>  
+<span class="n">authors</span><span class="o">:</span> <span class="err">投稿者</span>  
+<span class="n">summary</span><span class="o">:</span> <span class="n">Short</span> <span class="n">version</span> <span class="k">for</span> <span class="n">index</span> <span class="n">and</span> <span class="n">feeds</span>  
+</pre></div>
+
+
+<h2>pelicanconf.pyの設定変更</h2>
+<p>変更<br>
+SITEURL = '' → SITEURL = 'http://gamechan.github.io'  </p>
+<h1>RELATIVE_URLS = True → RELATIVE_URLS = True</h1>
+<p>追加  </p>
+<div class="highlight"><pre><span></span>TIMEZONE = &#39;Asia/Tokyo&#39;  
+DATE_FORMATS = {  
+    &#39;en&#39;: &#39;%a, %d %b %Y&#39;,  
+    &#39;ja&#39;: &#39;%Y-%m-%d(%a)&#39;,  
+}  
+ARTICLE_URL = &#39;blog/{date:%Y}/{date:%m}/{slug}.html&#39;  
+ARTICLE_SAVE_AS = &#39;blog/{date:%Y}/{date:%m}/{slug}.html&#39;  
+PAGE_URL = &#39;pages/{slug}.html&#39;  
+PAGE_SAVE_AS = &#39;pages/{slug}.html&#39;  
+YEAR_ARCHIVE_SAVE_AS = &#39;blog/{date:%Y}/index.html&#39;  
+MONTH_ARCHIVE_SAVE_AS = &#39;blog/{date:%Y}/{date:%m}/index.html&#39;  
+CATEGORY_URL = &#39;blog/category/{slug}/&#39;  
+CATEGORY_SAVE_AS = &#39;blog/category/{slug}/index.html&#39;  
+CATEGORIES_SAVE_AS = &#39;blog/categories.html&#39;  
+TAG_URL = &#39;blog/tag/{slug}/&#39;  
+TAG_SAVE_AS = &#39;blog/tag/{slug}/index.html&#39;  
+TAGS_SAVE_AS = &#39;blog/tags.html&#39;  
+AUTHOR_URL = &#39;author/{slug}.html&#39;  
+AUTHOR_SAVE_AS = &#39;author/{slug}.html&#39;  
+AUTHORS_SAVE_AS = &#39;authors.html&#39;  
+</pre></div>
+
+
+<h2>ローカルで確認</h2>
+<div class="highlight"><pre><span></span>$ make html  
+$ make serve  
+</pre></div>
+
+
+<p>http://localhost:8000にアクセス</p>
+<h2>記事の公開</h2>
+<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">make</span> <span class="n">github</span>  
+<span class="err">$</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">outputh</span>  
+<span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">gamechan</span><span class="o">/</span><span class="n">gamechan</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span>
+</pre></div>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://gamechan.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

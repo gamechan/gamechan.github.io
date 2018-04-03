@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>GAMEANIME LAB - Memo</title><link href="http://gamechan.github.io/" rel="alternate"></link><link href="http://gamechan.github.io/feeds/memo.atom.xml" rel="self"></link><id>http://gamechan.github.io/</id><updated>2018-04-03T00:00:00+09:00</updated><entry><title>github pagesをpelicanで始める</title><link href="http://gamechan.github.io/blog/2018/04/first-post.html" rel="alternate"></link><published>2018-04-03T00:00:00+09:00</published><updated>2018-04-03T00:00:00+09:00</updated><author><name>gamechan</name></author><id>tag:gamechan.github.io,2018-04-03:/blog/2018/04/first-post.html</id><summary type="html">&lt;h2&gt;概要&lt;/h2&gt;
+&lt;p&gt;Pelican導入から公開までのメモ&lt;/p&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;p&gt;• linux mint 18.3&lt;br&gt;
+• Python 3.6.3&lt;br&gt;
+• pip 9.0.3  &lt;/p&gt;
+&lt;h2&gt;導入&lt;/h2&gt;
+&lt;h3&gt;インストール&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo pip install pelican Markdown pytz ghp-import
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;クイックスタート&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/gamechan/gamechan.github.io  
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; gamechan.github.io  
+$ pelican-quickstart  
+Welcome to pelican-quickstart v3.7.1.
+
+This script will &lt;span class="nb"&gt;help&lt;/span&gt; you …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;概要&lt;/h2&gt;
+&lt;p&gt;Pelican導入から公開までのメモ&lt;/p&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;p&gt;• linux mint 18.3&lt;br&gt;
+• Python 3.6.3&lt;br&gt;
+• pip 9.0.3  &lt;/p&gt;
+&lt;h2&gt;導入&lt;/h2&gt;
+&lt;h3&gt;インストール&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo pip install pelican Markdown pytz ghp-import
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;クイックスタート&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/gamechan/gamechan.github.io  
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; gamechan.github.io  
+$ pelican-quickstart  
+Welcome to pelican-quickstart v3.7.1.
+
+This script will &lt;span class="nb"&gt;help&lt;/span&gt; you create a new Pelican-based website.
+
+Please answer the following questions so this script can  generate the files  
+needed by Pelican.  
+
+
+&amp;gt; Where &lt;span class="k"&gt;do&lt;/span&gt; you want to create your new web site? &lt;span class="o"&gt;[&lt;/span&gt;.&lt;span class="o"&gt;]&lt;/span&gt; .  
+&amp;gt; What will be the title of this web site? GAMEANIME LAB  
+&amp;gt; Who will be the author of this web site? gamechan  
+&amp;gt; What will be the default language of this web site? &lt;span class="o"&gt;[&lt;/span&gt;ja&lt;span class="o"&gt;]&lt;/span&gt; ja  
+&amp;gt; Do you want to specify a URL prefix? e.g.,  http://example.com   &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; y  
+&amp;gt; What is your URL prefix? &lt;span class="o"&gt;(&lt;/span&gt;see above example&lt;span class="p"&gt;;&lt;/span&gt; no trailing  slash&lt;span class="o"&gt;)&lt;/span&gt; http://gamechan.github.io  
+&amp;gt; Do you want to &lt;span class="nb"&gt;enable&lt;/span&gt; article pagination? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; y  
+&amp;gt; How many articles per page &lt;span class="k"&gt;do&lt;/span&gt; you want? &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;  
+&amp;gt; What is your &lt;span class="nb"&gt;time&lt;/span&gt; zone? &lt;span class="o"&gt;[&lt;/span&gt;Europe/Paris&lt;span class="o"&gt;]&lt;/span&gt; Asia/Tokyo  
+&amp;gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; y  
+&amp;gt; Do you want an auto-reload &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; simpleHTTP script to assist with theme and site development? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; y  
+&amp;gt; Do you want to upload your website using FTP? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; n  
+&amp;gt; Do you want to upload your website using SSH? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; n  
+&amp;gt; Do you want to upload your website using Dropbox? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; n  
+&amp;gt; Do you want to upload your website using S3? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; n  
+&amp;gt; Do you want to upload your website using Rackspace Cloud Files? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; n  
+&amp;gt; Do you want to upload your website using GitHub Pages? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; y  
+&amp;gt; Is this your personal page &lt;span class="o"&gt;(&lt;/span&gt;username.github.io&lt;span class="o"&gt;)&lt;/span&gt;? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; y  
+Done. Your new project is available at /home/mint/gamechan.github.io
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;記事の作成&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;markdownで記事を作成して/contentに保存&lt;/li&gt;
+&lt;li&gt;テンプレ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;記事タイトル&lt;/span&gt;  
+&lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;yyyy&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mm&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dd&lt;/span&gt; &lt;span class="n"&gt;HH&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;mm&lt;/span&gt;  
+&lt;span class="n"&gt;modified&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;yyyy&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mm&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dd&lt;/span&gt; &lt;span class="n"&gt;HH&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;mm&lt;/span&gt;  
+&lt;span class="n"&gt;tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;tag1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;tag2&lt;/span&gt;  
+&lt;span class="n"&gt;category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;category名&lt;/span&gt;  
+&lt;span class="n"&gt;slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kd"&gt;super&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;  
+&lt;span class="n"&gt;authors&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="err"&gt;投稿者&lt;/span&gt;  
+&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Short&lt;/span&gt; &lt;span class="n"&gt;version&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;feeds&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;pelicanconf.pyの設定変更&lt;/h2&gt;
+&lt;p&gt;変更&lt;br&gt;
+SITEURL = '' → SITEURL = 'http://gamechan.github.io'  &lt;/p&gt;
+&lt;h1&gt;RELATIVE_URLS = True → RELATIVE_URLS = True&lt;/h1&gt;
+&lt;p&gt;追加  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;TIMEZONE = &amp;#39;Asia/Tokyo&amp;#39;  
+DATE_FORMATS = {  
+    &amp;#39;en&amp;#39;: &amp;#39;%a, %d %b %Y&amp;#39;,  
+    &amp;#39;ja&amp;#39;: &amp;#39;%Y-%m-%d(%a)&amp;#39;,  
+}  
+ARTICLE_URL = &amp;#39;blog/{date:%Y}/{date:%m}/{slug}.html&amp;#39;  
+ARTICLE_SAVE_AS = &amp;#39;blog/{date:%Y}/{date:%m}/{slug}.html&amp;#39;  
+PAGE_URL = &amp;#39;pages/{slug}.html&amp;#39;  
+PAGE_SAVE_AS = &amp;#39;pages/{slug}.html&amp;#39;  
+YEAR_ARCHIVE_SAVE_AS = &amp;#39;blog/{date:%Y}/index.html&amp;#39;  
+MONTH_ARCHIVE_SAVE_AS = &amp;#39;blog/{date:%Y}/{date:%m}/index.html&amp;#39;  
+CATEGORY_URL = &amp;#39;blog/category/{slug}/&amp;#39;  
+CATEGORY_SAVE_AS = &amp;#39;blog/category/{slug}/index.html&amp;#39;  
+CATEGORIES_SAVE_AS = &amp;#39;blog/categories.html&amp;#39;  
+TAG_URL = &amp;#39;blog/tag/{slug}/&amp;#39;  
+TAG_SAVE_AS = &amp;#39;blog/tag/{slug}/index.html&amp;#39;  
+TAGS_SAVE_AS = &amp;#39;blog/tags.html&amp;#39;  
+AUTHOR_URL = &amp;#39;author/{slug}.html&amp;#39;  
+AUTHOR_SAVE_AS = &amp;#39;author/{slug}.html&amp;#39;  
+AUTHORS_SAVE_AS = &amp;#39;authors.html&amp;#39;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;ローカルで確認&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html  
+$ make serve  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;http://localhost:8000にアクセス&lt;/p&gt;
+&lt;h2&gt;記事の公開&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;github&lt;/span&gt;  
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ghp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;outputh&lt;/span&gt;  
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gamechan&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gamechan&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="github"></category><category term="pelican"></category></entry></feed>
