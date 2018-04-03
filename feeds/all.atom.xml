@@ -81,8 +81,8 @@ Done. Your new project is available at /home/mint/gamechan.github.io
 
 &lt;h2&gt;pelicanconf.pyの設定変更&lt;/h2&gt;
 &lt;p&gt;変更&lt;br&gt;
-SITEURL = '' → SITEURL = 'http://gamechan.github.io'  &lt;/p&gt;
-&lt;h1&gt;RELATIVE_URLS = True → RELATIVE_URLS = True&lt;/h1&gt;
+SITEURL = '' → SITEURL = 'http://gamechan.github.io'&lt;br&gt;
+#RELATIVE_URLS = True → RELATIVE_URLS = True&lt;/p&gt;
 &lt;p&gt;追加  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;TIMEZONE = &amp;#39;Asia/Tokyo&amp;#39;  
 DATE_FORMATS = {  
